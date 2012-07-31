@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		655B479815062F050030673D /* SoundView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 655B479715062F040030673D /* SoundView.mm */; };
+		655B47BB1506321C0030673D /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47A61506321C0030673D /* libfmodex.dylib */; };
+		655B47BC1506321C0030673D /* libfmodex_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47A71506321C0030673D /* libfmodex_iphoneos.a */; };
+		655B47BD1506321C0030673D /* libfmodex_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47A81506321C0030673D /* libfmodex_iphonesimulator.a */; };
+		655B47BE1506321C0030673D /* libfmodexL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47A91506321C0030673D /* libfmodexL_iphoneos.a */; };
+		655B47BF1506321C0030673D /* libfmodexL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47AA1506321C0030673D /* libfmodexL_iphonesimulator.a */; };
+		655B47C01506321C0030673D /* libfmodevent_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B31506321C0030673D /* libfmodevent_iphoneos.a */; };
+		655B47C11506321C0030673D /* libfmodevent_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B41506321C0030673D /* libfmodevent_iphonesimulator.a */; };
+		655B47C21506321C0030673D /* libfmodeventL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B51506321C0030673D /* libfmodeventL_iphoneos.a */; };
+		655B47C31506321C0030673D /* libfmodeventL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B61506321C0030673D /* libfmodeventL_iphonesimulator.a */; };
+		655B47C41506321C0030673D /* libfmodeventnet_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B71506321C0030673D /* libfmodeventnet_iphoneos.a */; };
+		655B47C51506321C0030673D /* libfmodeventnet_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B81506321C0030673D /* libfmodeventnet_iphonesimulator.a */; };
+		655B47C61506321C0030673D /* libfmodeventnetL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47B91506321C0030673D /* libfmodeventnetL_iphoneos.a */; };
+		655B47C71506321C0030673D /* libfmodeventnetL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47BA1506321C0030673D /* libfmodeventnetL_iphonesimulator.a */; };
+		655B47E51506323F0030673D /* -012_DB4AD4BD89734CB2.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CA1506323F0030673D /* -012_DB4AD4BD89734CB2.fobj */; };
+		655B47E61506323F0030673D /* -036_57AA739ACDF69491.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CB1506323F0030673D /* -036_57AA739ACDF69491.fobj */; };
+		655B47E71506323F0030673D /* -060_B43C96955CACD1D4.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CC1506323F0030673D /* -060_B43C96955CACD1D4.fobj */; };
+		655B47E81506323F0030673D /* -084_A4DBA8B92B263942.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CD1506323F0030673D /* -084_A4DBA8B92B263942.fobj */; };
+		655B47E91506323F0030673D /* -108_879921E6A306E731.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CE1506323F0030673D /* -108_879921E6A306E731.fobj */; };
+		655B47EA1506323F0030673D /* -132_7390BD293B804B38.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47CF1506323F0030673D /* -132_7390BD293B804B38.fobj */; };
+		655B47EB1506323F0030673D /* -156_23C84AD7793BC1F2.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D01506323F0030673D /* -156_23C84AD7793BC1F2.fobj */; };
+		655B47EC1506323F0030673D /* 012_B46D7B725FCC09EA.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D11506323F0030673D /* 012_B46D7B725FCC09EA.fobj */; };
+		655B47ED1506323F0030673D /* 036_A8F7949CF71C36D8.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D21506323F0030673D /* 036_A8F7949CF71C36D8.fobj */; };
+		655B47EE1506323F0030673D /* 060_22C32AFFCF122818.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D31506323F0030673D /* 060_22C32AFFCF122818.fobj */; };
+		655B47EF1506323F0030673D /* 084_39243323323E3A96.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D41506323F0030673D /* 084_39243323323E3A96.fobj */; };
+		655B47F01506323F0030673D /* 108_D33E9A353345C7A0.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D51506323F0030673D /* 108_D33E9A353345C7A0.fobj */; };
+		655B47F11506323F0030673D /* 132_FC27499F14282365.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D61506323F0030673D /* 132_FC27499F14282365.fobj */; };
+		655B47F21506323F0030673D /* 156_C3BF284CB4383085.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D71506323F0030673D /* 156_C3BF284CB4383085.fobj */; };
+		655B47F31506323F0030673D /* 180_4BBDE17CD2D32323.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D81506323F0030673D /* 180_4BBDE17CD2D32323.fobj */; };
+		655B47F41506323F0030673D /* Alert Organ 0059 62B_7969399E14A47FE2.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47D91506323F0030673D /* Alert Organ 0059 62B_7969399E14A47FE2.fobj */; };
+		655B47F51506323F0030673D /* Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DA1506323F0030673D /* Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj */; };
+		655B47F61506323F0030673D /* Beacon Synth B 0045 24B_991F878C7AA121BC.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DB1506323F0030673D /* Beacon Synth B 0045 24B_991F878C7AA121BC.fobj */; };
+		655B47F71506323F0030673D /* Off Xylophone 0066 86B_30F9E9589C448948.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DC1506323F0030673D /* Off Xylophone 0066 86B_30F9E9589C448948.fobj */; };
+		655B47F81506323F0030673D /* On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DD1506323F0030673D /* On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj */; };
+		655B47F91506323F0030673D /* Success Piano 0062 86B_4D9C85D989599F16.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DE1506323F0030673D /* Success Piano 0062 86B_4D9C85D989599F16.fobj */; };
+		655B47FA1506323F0030673D /* Tick Piano 56 56A_52FEAE17FD9F7881.fobj in Resources */ = {isa = PBXBuildFile; fileRef = 655B47DF1506323F0030673D /* Tick Piano 56 56A_52FEAE17FD9F7881.fobj */; };
+		655B47FB1506323F0030673D /* AudioCompass.fev in Resources */ = {isa = PBXBuildFile; fileRef = 655B47E01506323F0030673D /* AudioCompass.fev */; };
+		655B47FC1506323F0030673D /* AudioCompass.txt in Resources */ = {isa = PBXBuildFile; fileRef = 655B47E21506323F0030673D /* AudioCompass.txt */; };
+		655B47FD1506323F0030673D /* AudioCompass_bank00.fsb in Resources */ = {isa = PBXBuildFile; fileRef = 655B47E31506323F0030673D /* AudioCompass_bank00.fsb */; };
+		655B47FE1506323F0030673D /* AudioCompass_bank00.lst in Resources */ = {isa = PBXBuildFile; fileRef = 655B47E41506323F0030673D /* AudioCompass_bank00.lst */; };
+		655B48001506326D0030673D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B47FF1506326D0030673D /* CoreAudio.framework */; };
+		655B4802150632800030673D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B4801150632800030673D /* AudioToolbox.framework */; };
+		65A086C214FF75D2005E28F9 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A086C014FF75D2005E28F9 /* CreateViewController.m */; };
+		65A086C314FF75D2005E28F9 /* CreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A086C114FF75D2005E28F9 /* CreateViewController.xib */; };
+		65D2492914FCF67E00A84A31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2492814FCF67E00A84A31 /* UIKit.framework */; };
+		65D2492B14FCF67E00A84A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2492A14FCF67E00A84A31 /* Foundation.framework */; };
+		65D2492D14FCF67E00A84A31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2492C14FCF67E00A84A31 /* CoreGraphics.framework */; };
+		65D2492F14FCF67E00A84A31 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2492E14FCF67E00A84A31 /* CoreData.framework */; };
+		65D2493514FCF67E00A84A31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D2493314FCF67E00A84A31 /* InfoPlist.strings */; };
+		65D2493714FCF67E00A84A31 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65D2493614FCF67E00A84A31 /* main.mm */; };
+		65D2493B14FCF67E00A84A31 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65D2493A14FCF67E00A84A31 /* AppDelegate.mm */; };
+		65D2493E14FCF67E00A84A31 /* SoundGuide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65D2493C14FCF67E00A84A31 /* SoundGuide.xcdatamodeld */; };
+		65D2494814FCF7E500A84A31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2494714FCF7E500A84A31 /* CoreLocation.framework */; };
+		65D2494A14FCF7EC00A84A31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2494914FCF7EC00A84A31 /* MapKit.framework */; };
+		65D2495414FD348900A84A31 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2495314FD348900A84A31 /* CoreMotion.framework */; };
+		65D2495A14FD3CB400A84A31 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D2495914FD3CB400A84A31 /* Default.png */; };
+		65D2495C14FD3CB800A84A31 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D2495B14FD3CB800A84A31 /* Default@2x.png */; };
+		65D2496914FE8E6A00A84A31 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D2496814FE8E6A00A84A31 /* Route.m */; };
+		65D2496C14FE8E7900A84A31 /* Waypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D2496B14FE8E7900A84A31 /* Waypoint.m */; };
+		65D2496F14FE8F8900A84A31 /* RoutesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65D2496E14FE8F8900A84A31 /* RoutesViewController.mm */; };
+		65D4F98714FF7578003F6E85 /* RouteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65D4F98514FF7578003F6E85 /* RouteViewController.mm */; };
+		65D4F98814FF7578003F6E85 /* RouteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D4F98614FF7578003F6E85 /* RouteViewController.xib */; };
+		65D4F98B14FF7582003F6E85 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4F98A14FF7581003F6E85 /* MapAnnotation.m */; };
+		65D8140B15C7FB60005D61E1 /* SoundGuide02_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8140615C7FB60005D61E1 /* SoundGuide02_background.png */; };
+		65D8140C15C7FB60005D61E1 /* SoundGuide02_background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8140715C7FB60005D61E1 /* SoundGuide02_background2.png */; };
+		65D8140D15C7FB60005D61E1 /* SoundGuide02_icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8140815C7FB60005D61E1 /* SoundGuide02_icon114.png */; };
+		65D8140E15C7FB60005D61E1 /* SoundGuide02_icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8140915C7FB60005D61E1 /* SoundGuide02_icon57.png */; };
+		65D8140F15C7FB60005D61E1 /* SoundGuide02_mainarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8140A15C7FB60005D61E1 /* SoundGuide02_mainarrow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		655B479615062F040030673D /* SoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundView.h; sourceTree = "<group>"; };
+		655B479715062F040030673D /* SoundView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SoundView.mm; sourceTree = "<group>"; };
+		655B479D1506321C0030673D /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		655B479E1506321C0030673D /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		655B479F1506321C0030673D /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		655B47A01506321C0030673D /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		655B47A11506321C0030673D /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		655B47A21506321C0030673D /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
+		655B47A31506321C0030673D /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		655B47A41506321C0030673D /* fmodiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmodiphone.h; sourceTree = "<group>"; };
+		655B47A61506321C0030673D /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
+		655B47A71506321C0030673D /* libfmodex_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodex_iphoneos.a; sourceTree = "<group>"; };
+		655B47A81506321C0030673D /* libfmodex_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodex_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47A91506321C0030673D /* libfmodexL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodexL_iphoneos.a; sourceTree = "<group>"; };
+		655B47AA1506321C0030673D /* libfmodexL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodexL_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47AE1506321C0030673D /* fmod_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_event.h; sourceTree = "<group>"; };
+		655B47AF1506321C0030673D /* fmod_event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_event.hpp; sourceTree = "<group>"; };
+		655B47B01506321C0030673D /* fmod_event_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_event_net.h; sourceTree = "<group>"; };
+		655B47B11506321C0030673D /* fmod_event_net.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_event_net.hpp; sourceTree = "<group>"; };
+		655B47B31506321C0030673D /* libfmodevent_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodevent_iphoneos.a; sourceTree = "<group>"; };
+		655B47B41506321C0030673D /* libfmodevent_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodevent_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47B51506321C0030673D /* libfmodeventL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventL_iphoneos.a; sourceTree = "<group>"; };
+		655B47B61506321C0030673D /* libfmodeventL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventL_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47B71506321C0030673D /* libfmodeventnet_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventnet_iphoneos.a; sourceTree = "<group>"; };
+		655B47B81506321C0030673D /* libfmodeventnet_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventnet_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47B91506321C0030673D /* libfmodeventnetL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventnetL_iphoneos.a; sourceTree = "<group>"; };
+		655B47BA1506321C0030673D /* libfmodeventnetL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodeventnetL_iphonesimulator.a; sourceTree = "<group>"; };
+		655B47CA1506323F0030673D /* -012_DB4AD4BD89734CB2.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-012_DB4AD4BD89734CB2.fobj"; sourceTree = "<group>"; };
+		655B47CB1506323F0030673D /* -036_57AA739ACDF69491.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-036_57AA739ACDF69491.fobj"; sourceTree = "<group>"; };
+		655B47CC1506323F0030673D /* -060_B43C96955CACD1D4.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-060_B43C96955CACD1D4.fobj"; sourceTree = "<group>"; };
+		655B47CD1506323F0030673D /* -084_A4DBA8B92B263942.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-084_A4DBA8B92B263942.fobj"; sourceTree = "<group>"; };
+		655B47CE1506323F0030673D /* -108_879921E6A306E731.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-108_879921E6A306E731.fobj"; sourceTree = "<group>"; };
+		655B47CF1506323F0030673D /* -132_7390BD293B804B38.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-132_7390BD293B804B38.fobj"; sourceTree = "<group>"; };
+		655B47D01506323F0030673D /* -156_23C84AD7793BC1F2.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "-156_23C84AD7793BC1F2.fobj"; sourceTree = "<group>"; };
+		655B47D11506323F0030673D /* 012_B46D7B725FCC09EA.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 012_B46D7B725FCC09EA.fobj; sourceTree = "<group>"; };
+		655B47D21506323F0030673D /* 036_A8F7949CF71C36D8.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 036_A8F7949CF71C36D8.fobj; sourceTree = "<group>"; };
+		655B47D31506323F0030673D /* 060_22C32AFFCF122818.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 060_22C32AFFCF122818.fobj; sourceTree = "<group>"; };
+		655B47D41506323F0030673D /* 084_39243323323E3A96.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 084_39243323323E3A96.fobj; sourceTree = "<group>"; };
+		655B47D51506323F0030673D /* 108_D33E9A353345C7A0.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 108_D33E9A353345C7A0.fobj; sourceTree = "<group>"; };
+		655B47D61506323F0030673D /* 132_FC27499F14282365.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 132_FC27499F14282365.fobj; sourceTree = "<group>"; };
+		655B47D71506323F0030673D /* 156_C3BF284CB4383085.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 156_C3BF284CB4383085.fobj; sourceTree = "<group>"; };
+		655B47D81506323F0030673D /* 180_4BBDE17CD2D32323.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = 180_4BBDE17CD2D32323.fobj; sourceTree = "<group>"; };
+		655B47D91506323F0030673D /* Alert Organ 0059 62B_7969399E14A47FE2.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alert Organ 0059 62B_7969399E14A47FE2.fobj"; sourceTree = "<group>"; };
+		655B47DA1506323F0030673D /* Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj"; sourceTree = "<group>"; };
+		655B47DB1506323F0030673D /* Beacon Synth B 0045 24B_991F878C7AA121BC.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beacon Synth B 0045 24B_991F878C7AA121BC.fobj"; sourceTree = "<group>"; };
+		655B47DC1506323F0030673D /* Off Xylophone 0066 86B_30F9E9589C448948.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Off Xylophone 0066 86B_30F9E9589C448948.fobj"; sourceTree = "<group>"; };
+		655B47DD1506323F0030673D /* On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj"; sourceTree = "<group>"; };
+		655B47DE1506323F0030673D /* Success Piano 0062 86B_4D9C85D989599F16.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Success Piano 0062 86B_4D9C85D989599F16.fobj"; sourceTree = "<group>"; };
+		655B47DF1506323F0030673D /* Tick Piano 56 56A_52FEAE17FD9F7881.fobj */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tick Piano 56 56A_52FEAE17FD9F7881.fobj"; sourceTree = "<group>"; };
+		655B47E01506323F0030673D /* AudioCompass.fev */ = {isa = PBXFileReference; lastKnownFileType = file; path = AudioCompass.fev; sourceTree = "<group>"; };
+		655B47E11506323F0030673D /* AudioCompass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCompass.h; sourceTree = "<group>"; };
+		655B47E21506323F0030673D /* AudioCompass.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AudioCompass.txt; sourceTree = "<group>"; };
+		655B47E31506323F0030673D /* AudioCompass_bank00.fsb */ = {isa = PBXFileReference; lastKnownFileType = file; path = AudioCompass_bank00.fsb; sourceTree = "<group>"; };
+		655B47E41506323F0030673D /* AudioCompass_bank00.lst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AudioCompass_bank00.lst; sourceTree = "<group>"; };
+		655B47FF1506326D0030673D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		655B4801150632800030673D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		65A086BF14FF75D2005E28F9 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		65A086C014FF75D2005E28F9 /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		65A086C114FF75D2005E28F9 /* CreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateViewController.xib; sourceTree = "<group>"; };
+		65D2492414FCF67E00A84A31 /* SoundGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D2492814FCF67E00A84A31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65D2492A14FCF67E00A84A31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65D2492C14FCF67E00A84A31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65D2492E14FCF67E00A84A31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65D2493214FCF67E00A84A31 /* SoundGuide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundGuide-Info.plist"; sourceTree = "<group>"; };
+		65D2493414FCF67E00A84A31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65D2493614FCF67E00A84A31 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		65D2493814FCF67E00A84A31 /* SoundGuide-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundGuide-Prefix.pch"; sourceTree = "<group>"; };
+		65D2493914FCF67E00A84A31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65D2493A14FCF67E00A84A31 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		65D2493D14FCF67E00A84A31 /* SoundGuide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundGuide.xcdatamodel; sourceTree = "<group>"; };
+		65D2494714FCF7E500A84A31 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		65D2494914FCF7EC00A84A31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		65D2495314FD348900A84A31 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		65D2495914FD3CB400A84A31 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		65D2495B14FD3CB800A84A31 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		65D2496714FE8E6A00A84A31 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		65D2496814FE8E6A00A84A31 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		65D2496A14FE8E7900A84A31 /* Waypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waypoint.h; sourceTree = "<group>"; };
+		65D2496B14FE8E7900A84A31 /* Waypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waypoint.m; sourceTree = "<group>"; };
+		65D2496D14FE8F8900A84A31 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		65D2496E14FE8F8900A84A31 /* RoutesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoutesViewController.mm; sourceTree = "<group>"; };
+		65D4F98414FF7578003F6E85 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		65D4F98514FF7578003F6E85 /* RouteViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RouteViewController.mm; sourceTree = "<group>"; };
+		65D4F98614FF7578003F6E85 /* RouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteViewController.xib; sourceTree = "<group>"; };
+		65D4F98914FF7581003F6E85 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		65D4F98A14FF7581003F6E85 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		65D8140615C7FB60005D61E1 /* SoundGuide02_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SoundGuide02_background.png; sourceTree = "<group>"; };
+		65D8140715C7FB60005D61E1 /* SoundGuide02_background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SoundGuide02_background2.png; sourceTree = "<group>"; };
+		65D8140815C7FB60005D61E1 /* SoundGuide02_icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SoundGuide02_icon114.png; sourceTree = "<group>"; };
+		65D8140915C7FB60005D61E1 /* SoundGuide02_icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SoundGuide02_icon57.png; sourceTree = "<group>"; };
+		65D8140A15C7FB60005D61E1 /* SoundGuide02_mainarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SoundGuide02_mainarrow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65D2492114FCF67E00A84A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655B4802150632800030673D /* AudioToolbox.framework in Frameworks */,
+				655B48001506326D0030673D /* CoreAudio.framework in Frameworks */,
+				65D2495414FD348900A84A31 /* CoreMotion.framework in Frameworks */,
+				65D2494A14FCF7EC00A84A31 /* MapKit.framework in Frameworks */,
+				65D2494814FCF7E500A84A31 /* CoreLocation.framework in Frameworks */,
+				65D2492914FCF67E00A84A31 /* UIKit.framework in Frameworks */,
+				65D2492B14FCF67E00A84A31 /* Foundation.framework in Frameworks */,
+				65D2492D14FCF67E00A84A31 /* CoreGraphics.framework in Frameworks */,
+				65D2492F14FCF67E00A84A31 /* CoreData.framework in Frameworks */,
+				655B47BB1506321C0030673D /* libfmodex.dylib in Frameworks */,
+				655B47BC1506321C0030673D /* libfmodex_iphoneos.a in Frameworks */,
+				655B47BD1506321C0030673D /* libfmodex_iphonesimulator.a in Frameworks */,
+				655B47BE1506321C0030673D /* libfmodexL_iphoneos.a in Frameworks */,
+				655B47BF1506321C0030673D /* libfmodexL_iphonesimulator.a in Frameworks */,
+				655B47C01506321C0030673D /* libfmodevent_iphoneos.a in Frameworks */,
+				655B47C11506321C0030673D /* libfmodevent_iphonesimulator.a in Frameworks */,
+				655B47C21506321C0030673D /* libfmodeventL_iphoneos.a in Frameworks */,
+				655B47C31506321C0030673D /* libfmodeventL_iphonesimulator.a in Frameworks */,
+				655B47C41506321C0030673D /* libfmodeventnet_iphoneos.a in Frameworks */,
+				655B47C51506321C0030673D /* libfmodeventnet_iphonesimulator.a in Frameworks */,
+				655B47C61506321C0030673D /* libfmodeventnetL_iphoneos.a in Frameworks */,
+				655B47C71506321C0030673D /* libfmodeventnetL_iphonesimulator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		655B479A1506321C0030673D /* FMOD */ = {
+			isa = PBXGroup;
+			children = (
+				655B479B1506321C0030673D /* api */,
+				655B47AB1506321C0030673D /* fmoddesignerapi */,
+			);
+			path = FMOD;
+			sourceTree = "<group>";
+		};
+		655B479B1506321C0030673D /* api */ = {
+			isa = PBXGroup;
+			children = (
+				655B479C1506321C0030673D /* inc */,
+				655B47A51506321C0030673D /* lib */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		655B479C1506321C0030673D /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				655B479D1506321C0030673D /* fmod.h */,
+				655B479E1506321C0030673D /* fmod.hpp */,
+				655B479F1506321C0030673D /* fmod_codec.h */,
+				655B47A01506321C0030673D /* fmod_dsp.h */,
+				655B47A11506321C0030673D /* fmod_errors.h */,
+				655B47A21506321C0030673D /* fmod_memoryinfo.h */,
+				655B47A31506321C0030673D /* fmod_output.h */,
+				655B47A41506321C0030673D /* fmodiphone.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		655B47A51506321C0030673D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				655B47A61506321C0030673D /* libfmodex.dylib */,
+				655B47A71506321C0030673D /* libfmodex_iphoneos.a */,
+				655B47A81506321C0030673D /* libfmodex_iphonesimulator.a */,
+				655B47A91506321C0030673D /* libfmodexL_iphoneos.a */,
+				655B47AA1506321C0030673D /* libfmodexL_iphonesimulator.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		655B47AB1506321C0030673D /* fmoddesignerapi */ = {
+			isa = PBXGroup;
+			children = (
+				655B47AC1506321C0030673D /* api */,
+			);
+			path = fmoddesignerapi;
+			sourceTree = "<group>";
+		};
+		655B47AC1506321C0030673D /* api */ = {
+			isa = PBXGroup;
+			children = (
+				655B47AD1506321C0030673D /* inc */,
+				655B47B21506321C0030673D /* lib */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		655B47AD1506321C0030673D /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				655B47AE1506321C0030673D /* fmod_event.h */,
+				655B47AF1506321C0030673D /* fmod_event.hpp */,
+				655B47B01506321C0030673D /* fmod_event_net.h */,
+				655B47B11506321C0030673D /* fmod_event_net.hpp */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		655B47B21506321C0030673D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				655B47B31506321C0030673D /* libfmodevent_iphoneos.a */,
+				655B47B41506321C0030673D /* libfmodevent_iphonesimulator.a */,
+				655B47B51506321C0030673D /* libfmodeventL_iphoneos.a */,
+				655B47B61506321C0030673D /* libfmodeventL_iphonesimulator.a */,
+				655B47B71506321C0030673D /* libfmodeventnet_iphoneos.a */,
+				655B47B81506321C0030673D /* libfmodeventnet_iphonesimulator.a */,
+				655B47B91506321C0030673D /* libfmodeventnetL_iphoneos.a */,
+				655B47BA1506321C0030673D /* libfmodeventnetL_iphonesimulator.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		655B47C81506323F0030673D /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				655B47C91506323F0030673D /* .fsbcache */,
+				655B47E01506323F0030673D /* AudioCompass.fev */,
+				655B47E11506323F0030673D /* AudioCompass.h */,
+				655B47E21506323F0030673D /* AudioCompass.txt */,
+				655B47E31506323F0030673D /* AudioCompass_bank00.fsb */,
+				655B47E41506323F0030673D /* AudioCompass_bank00.lst */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
+		655B47C91506323F0030673D /* .fsbcache */ = {
+			isa = PBXGroup;
+			children = (
+				655B47CA1506323F0030673D /* -012_DB4AD4BD89734CB2.fobj */,
+				655B47CB1506323F0030673D /* -036_57AA739ACDF69491.fobj */,
+				655B47CC1506323F0030673D /* -060_B43C96955CACD1D4.fobj */,
+				655B47CD1506323F0030673D /* -084_A4DBA8B92B263942.fobj */,
+				655B47CE1506323F0030673D /* -108_879921E6A306E731.fobj */,
+				655B47CF1506323F0030673D /* -132_7390BD293B804B38.fobj */,
+				655B47D01506323F0030673D /* -156_23C84AD7793BC1F2.fobj */,
+				655B47D11506323F0030673D /* 012_B46D7B725FCC09EA.fobj */,
+				655B47D21506323F0030673D /* 036_A8F7949CF71C36D8.fobj */,
+				655B47D31506323F0030673D /* 060_22C32AFFCF122818.fobj */,
+				655B47D41506323F0030673D /* 084_39243323323E3A96.fobj */,
+				655B47D51506323F0030673D /* 108_D33E9A353345C7A0.fobj */,
+				655B47D61506323F0030673D /* 132_FC27499F14282365.fobj */,
+				655B47D71506323F0030673D /* 156_C3BF284CB4383085.fobj */,
+				655B47D81506323F0030673D /* 180_4BBDE17CD2D32323.fobj */,
+				655B47D91506323F0030673D /* Alert Organ 0059 62B_7969399E14A47FE2.fobj */,
+				655B47DA1506323F0030673D /* Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj */,
+				655B47DB1506323F0030673D /* Beacon Synth B 0045 24B_991F878C7AA121BC.fobj */,
+				655B47DC1506323F0030673D /* Off Xylophone 0066 86B_30F9E9589C448948.fobj */,
+				655B47DD1506323F0030673D /* On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj */,
+				655B47DE1506323F0030673D /* Success Piano 0062 86B_4D9C85D989599F16.fobj */,
+				655B47DF1506323F0030673D /* Tick Piano 56 56A_52FEAE17FD9F7881.fobj */,
+			);
+			path = .fsbcache;
+			sourceTree = "<group>";
+		};
+		65D2491914FCF67E00A84A31 = {
+			isa = PBXGroup;
+			children = (
+				65D2493014FCF67E00A84A31 /* SoundGuide */,
+				65D8140515C7FB60005D61E1 /* Resources */,
+				65D2492714FCF67E00A84A31 /* Frameworks */,
+				65D2492514FCF67E00A84A31 /* Products */,
+				655B47C81506323F0030673D /* Banks */,
+				65D2495B14FD3CB800A84A31 /* Default@2x.png */,
+				65D2495914FD3CB400A84A31 /* Default.png */,
+			);
+			sourceTree = "<group>";
+		};
+		65D2492514FCF67E00A84A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D2492414FCF67E00A84A31 /* SoundGuide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D2492714FCF67E00A84A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655B479A1506321C0030673D /* FMOD */,
+				655B4801150632800030673D /* AudioToolbox.framework */,
+				655B47FF1506326D0030673D /* CoreAudio.framework */,
+				65D2494914FCF7EC00A84A31 /* MapKit.framework */,
+				65D2494714FCF7E500A84A31 /* CoreLocation.framework */,
+				65D2495314FD348900A84A31 /* CoreMotion.framework */,
+				65D2492814FCF67E00A84A31 /* UIKit.framework */,
+				65D2492A14FCF67E00A84A31 /* Foundation.framework */,
+				65D2492C14FCF67E00A84A31 /* CoreGraphics.framework */,
+				65D2492E14FCF67E00A84A31 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65D2493014FCF67E00A84A31 /* SoundGuide */ = {
+			isa = PBXGroup;
+			children = (
+				65D2493914FCF67E00A84A31 /* AppDelegate.h */,
+				65D2493A14FCF67E00A84A31 /* AppDelegate.mm */,
+				65D2496D14FE8F8900A84A31 /* RoutesViewController.h */,
+				65D2496E14FE8F8900A84A31 /* RoutesViewController.mm */,
+				65A086BF14FF75D2005E28F9 /* CreateViewController.h */,
+				65A086C014FF75D2005E28F9 /* CreateViewController.m */,
+				65A086C114FF75D2005E28F9 /* CreateViewController.xib */,
+				65D4F98414FF7578003F6E85 /* RouteViewController.h */,
+				65D4F98514FF7578003F6E85 /* RouteViewController.mm */,
+				65D4F98614FF7578003F6E85 /* RouteViewController.xib */,
+				655B479615062F040030673D /* SoundView.h */,
+				655B479715062F040030673D /* SoundView.mm */,
+				65D4F98914FF7581003F6E85 /* MapAnnotation.h */,
+				65D4F98A14FF7581003F6E85 /* MapAnnotation.m */,
+				65D2496714FE8E6A00A84A31 /* Route.h */,
+				65D2496814FE8E6A00A84A31 /* Route.m */,
+				65D2496A14FE8E7900A84A31 /* Waypoint.h */,
+				65D2496B14FE8E7900A84A31 /* Waypoint.m */,
+				65D2493C14FCF67E00A84A31 /* SoundGuide.xcdatamodeld */,
+				65D2493114FCF67E00A84A31 /* Supporting Files */,
+			);
+			path = SoundGuide;
+			sourceTree = "<group>";
+		};
+		65D2493114FCF67E00A84A31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65D2493214FCF67E00A84A31 /* SoundGuide-Info.plist */,
+				65D2493314FCF67E00A84A31 /* InfoPlist.strings */,
+				65D2493614FCF67E00A84A31 /* main.mm */,
+				65D2493814FCF67E00A84A31 /* SoundGuide-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D8140515C7FB60005D61E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65D8140615C7FB60005D61E1 /* SoundGuide02_background.png */,
+				65D8140715C7FB60005D61E1 /* SoundGuide02_background2.png */,
+				65D8140815C7FB60005D61E1 /* SoundGuide02_icon114.png */,
+				65D8140915C7FB60005D61E1 /* SoundGuide02_icon57.png */,
+				65D8140A15C7FB60005D61E1 /* SoundGuide02_mainarrow.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65D2492314FCF67E00A84A31 /* SoundGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D2494114FCF67E00A84A31 /* Build configuration list for PBXNativeTarget "SoundGuide" */;
+			buildPhases = (
+				65D2492014FCF67E00A84A31 /* Sources */,
+				65D2492114FCF67E00A84A31 /* Frameworks */,
+				65D2492214FCF67E00A84A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundGuide;
+			productName = SoundGuide;
+			productReference = 65D2492414FCF67E00A84A31 /* SoundGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65D2491B14FCF67E00A84A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 65D2491E14FCF67E00A84A31 /* Build configuration list for PBXProject "SoundGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65D2491914FCF67E00A84A31;
+			productRefGroup = 65D2492514FCF67E00A84A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65D2492314FCF67E00A84A31 /* SoundGuide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D2492214FCF67E00A84A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2493514FCF67E00A84A31 /* InfoPlist.strings in Resources */,
+				65D2495A14FD3CB400A84A31 /* Default.png in Resources */,
+				65D2495C14FD3CB800A84A31 /* Default@2x.png in Resources */,
+				65D4F98814FF7578003F6E85 /* RouteViewController.xib in Resources */,
+				65A086C314FF75D2005E28F9 /* CreateViewController.xib in Resources */,
+				655B47E51506323F0030673D /* -012_DB4AD4BD89734CB2.fobj in Resources */,
+				655B47E61506323F0030673D /* -036_57AA739ACDF69491.fobj in Resources */,
+				655B47E71506323F0030673D /* -060_B43C96955CACD1D4.fobj in Resources */,
+				655B47E81506323F0030673D /* -084_A4DBA8B92B263942.fobj in Resources */,
+				655B47E91506323F0030673D /* -108_879921E6A306E731.fobj in Resources */,
+				655B47EA1506323F0030673D /* -132_7390BD293B804B38.fobj in Resources */,
+				655B47EB1506323F0030673D /* -156_23C84AD7793BC1F2.fobj in Resources */,
+				655B47EC1506323F0030673D /* 012_B46D7B725FCC09EA.fobj in Resources */,
+				655B47ED1506323F0030673D /* 036_A8F7949CF71C36D8.fobj in Resources */,
+				655B47EE1506323F0030673D /* 060_22C32AFFCF122818.fobj in Resources */,
+				655B47EF1506323F0030673D /* 084_39243323323E3A96.fobj in Resources */,
+				655B47F01506323F0030673D /* 108_D33E9A353345C7A0.fobj in Resources */,
+				655B47F11506323F0030673D /* 132_FC27499F14282365.fobj in Resources */,
+				655B47F21506323F0030673D /* 156_C3BF284CB4383085.fobj in Resources */,
+				655B47F31506323F0030673D /* 180_4BBDE17CD2D32323.fobj in Resources */,
+				655B47F41506323F0030673D /* Alert Organ 0059 62B_7969399E14A47FE2.fobj in Resources */,
+				655B47F51506323F0030673D /* Beacon Synth A 0043 24B_C29D58695F69AFCF.fobj in Resources */,
+				655B47F61506323F0030673D /* Beacon Synth B 0045 24B_991F878C7AA121BC.fobj in Resources */,
+				655B47F71506323F0030673D /* Off Xylophone 0066 86B_30F9E9589C448948.fobj in Resources */,
+				655B47F81506323F0030673D /* On Piano 67 86B Stereo_F2B3564976DBCAA7.fobj in Resources */,
+				655B47F91506323F0030673D /* Success Piano 0062 86B_4D9C85D989599F16.fobj in Resources */,
+				655B47FA1506323F0030673D /* Tick Piano 56 56A_52FEAE17FD9F7881.fobj in Resources */,
+				655B47FB1506323F0030673D /* AudioCompass.fev in Resources */,
+				655B47FC1506323F0030673D /* AudioCompass.txt in Resources */,
+				655B47FD1506323F0030673D /* AudioCompass_bank00.fsb in Resources */,
+				655B47FE1506323F0030673D /* AudioCompass_bank00.lst in Resources */,
+				65D8140B15C7FB60005D61E1 /* SoundGuide02_background.png in Resources */,
+				65D8140C15C7FB60005D61E1 /* SoundGuide02_background2.png in Resources */,
+				65D8140D15C7FB60005D61E1 /* SoundGuide02_icon114.png in Resources */,
+				65D8140E15C7FB60005D61E1 /* SoundGuide02_icon57.png in Resources */,
+				65D8140F15C7FB60005D61E1 /* SoundGuide02_mainarrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65D2492014FCF67E00A84A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2493714FCF67E00A84A31 /* main.mm in Sources */,
+				65D2493B14FCF67E00A84A31 /* AppDelegate.mm in Sources */,
+				65D2493E14FCF67E00A84A31 /* SoundGuide.xcdatamodeld in Sources */,
+				65D2496914FE8E6A00A84A31 /* Route.m in Sources */,
+				65D2496C14FE8E7900A84A31 /* Waypoint.m in Sources */,
+				65D2496F14FE8F8900A84A31 /* RoutesViewController.mm in Sources */,
+				65D4F98714FF7578003F6E85 /* RouteViewController.mm in Sources */,
+				65D4F98B14FF7582003F6E85 /* MapAnnotation.m in Sources */,
+				65A086C214FF75D2005E28F9 /* CreateViewController.m in Sources */,
+				655B479815062F050030673D /* SoundView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65D2493314FCF67E00A84A31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D2493414FCF67E00A84A31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65D2493F14FCF67E00A84A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65D2494014FCF67E00A84A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65D2494214FCF67E00A84A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundGuide/SoundGuide-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FMOD/api/inc\"";
+				INFOPLIST_FILE = "SoundGuide/SoundGuide-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FMOD/api/lib\"",
+					"\"$(SRCROOT)/FMOD/fmoddesignerapi/api/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_LDFLAGS = "-lfmodex_iphoneos";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65D2494314FCF67E00A84A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundGuide/SoundGuide-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FMOD/api/inc\"";
+				INFOPLIST_FILE = "SoundGuide/SoundGuide-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FMOD/api/lib\"",
+					"\"$(SRCROOT)/FMOD/fmoddesignerapi/api/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_LDFLAGS = "-lfmodex_iphoneos";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65D2491E14FCF67E00A84A31 /* Build configuration list for PBXProject "SoundGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D2493F14FCF67E00A84A31 /* Debug */,
+				65D2494014FCF67E00A84A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D2494114FCF67E00A84A31 /* Build configuration list for PBXNativeTarget "SoundGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D2494214FCF67E00A84A31 /* Debug */,
+				65D2494314FCF67E00A84A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65D2493C14FCF67E00A84A31 /* SoundGuide.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65D2493D14FCF67E00A84A31 /* SoundGuide.xcdatamodel */,
+			);
+			currentVersion = 65D2493D14FCF67E00A84A31 /* SoundGuide.xcdatamodel */;
+			path = SoundGuide.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65D2491B14FCF67E00A84A31 /* Project object */;
+}
